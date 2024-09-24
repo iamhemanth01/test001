@@ -14,6 +14,11 @@
             color: #333;
         }
 
+        /* Smooth transition effect */
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
         /* Header Styling */
         header {
             background-color: #1a3d7c;
@@ -23,16 +28,19 @@
             background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70'); /* Replace with your own image */
             background-size: cover;
             background-position: center;
+            animation: fadeIn 2s ease;
         }
 
         header h1 {
             margin: 0;
             font-size: 3em;
             font-weight: bold;
+            animation: slideInFromLeft 1.5s ease;
         }
 
         header p {
             font-size: 1.5em;
+            animation: slideInFromRight 1.5s ease;
         }
 
         /* Navigation Styling */
@@ -48,6 +56,13 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
+            position: relative;
+        }
+
+        /* Hover animation for navigation links */
+        nav a:hover {
+            color: #1a3d7c;
+            transform: scale(1.1);
         }
 
         /* Section Styling */
@@ -58,6 +73,8 @@
             background-color: white;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
         }
 
         section h2 {
@@ -98,6 +115,9 @@
             padding: 20px;
             border-left: 5px solid #1a3d7c;
             border-radius: 10px;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+            animation-delay: 0.5s;
         }
 
         .projects li img {
@@ -107,12 +127,18 @@
             border-radius: 10px;
         }
 
+        /* Hover effect for project images */
+        .projects li img:hover {
+            transform: scale(1.1);
+        }
+
         /* Footer Styling */
         footer {
             text-align: center;
             padding: 30px;
             background-color: #003366;
             color: white;
+            animation: fadeIn 2s ease;
         }
 
         .social-icons a {
@@ -120,6 +146,51 @@
             text-decoration: none;
             color: white;
             font-size: 1.5em;
+            transform: scale(1);
+        }
+
+        /* Hover effect for social icons */
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
@@ -192,7 +263,23 @@
     </section>
 
     <!-- Projects Section -->
-   
+    <section id="projects" style="background-color: #fff0e6;">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Kraft Heinz Project">
+                <div><strong>Kraft Heinz - US</strong>: Built supply chain models focusing on optimizing network efficiency and last-mile delivery strategies.</div>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1508385082359-f67a0e56a5b0" alt="Locus Projects">
+                <div><strong>Careem, Al Ahram, GAC Dubai, STC by Channels</strong>: Designed solutions for digitizing and optimizing last-mile delivery in diverse industries.</div>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1581093588401-874ad6752642" alt="Jumbotail Project">
+                <div><strong>Jumbotail</strong>: Implemented processes for launching and expanding fulfillment centers and enhanced inventory accuracy in warehouses.</div>
+            </li>
+        </ul>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" style="background-color: #e6f7ff;">
