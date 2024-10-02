@@ -60,6 +60,12 @@
             margin: 0; /* Remove margin */
         }
 
+        .name {
+            font-size: 2.2em; /* Font size for the name */
+            font-weight: bold;
+            margin-bottom: 10px; /* Space below the name */
+        }
+
         section h2 {
             color: #1a3d7c;
             font-size: 1.8em; /* Increased font size for section headers */
@@ -172,15 +178,16 @@
         /* Navigation styles */
         nav {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap; /* Allows the navigation items to wrap to next line */
             margin-bottom: 20px;
+            justify-content: space-between; /* Align items evenly */
         }
 
         nav a {
             font-size: 1.3em; /* Increased font size for quick access names */
             color: #1a3d7c;
             text-decoration: none;
-            margin: 5px 0;
+            margin: 5px; /* Small margin for spacing */
             padding: 5px;
             border-radius: 5px;
         }
@@ -198,6 +205,7 @@
 
     <div class="container">
         <div class="left-section">
+            <div class="name">Hemanth Gowda A R</div>
             <h2>Details</h2>
             <p>Digital Supply Chain | SaaS | Optimization | Industrial Engineering | Operations Research</p>
             <h2>About Me</h2>
@@ -233,12 +241,11 @@
                         <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
                         <ul>
                             <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                            <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
-                            <li>Achieved cost savings and improved overall supply chain performance.</li>
+                            <li>Enhanced operational effectiveness through innovative data-driven recommendations for diverse clients.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
+                        <strong>Walmart</strong> - Supply Chain Analyst (June 2019 - February 2023)
                         <ul>
                             <li>Led the development and optimization of the supply chain network to support the company's growth and market demands.</li>
                             <li>Utilized data analytics to forecast demand and streamline inventory management, ensuring timely deliveries and minimal wastage.</li>
