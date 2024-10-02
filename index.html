@@ -23,7 +23,7 @@
             background-color: #1a3d7c;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
             background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70');
             background-size: cover;
             background-position: center;
@@ -66,8 +66,8 @@
 
         section p, section ul li {
             font-size: 1.1em;
-            line-height: 1.5;
-            margin-bottom: 10px;
+            line-height: 1.2; /* Reduced spacing */
+            margin-bottom: 5px; /* Reduced margin */
         }
 
         footer {
@@ -130,6 +130,40 @@
             color: #1a3d7c;
             font-size: 1.5em;
         }
+
+        /* Skill icon styles */
+        .skill-icon {
+            margin-right: 5px;
+            color: #1a3d7c;
+            font-size: 1.2em;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .skills-list div {
+            display: flex;
+            align-items: center;
+            margin: 5px; /* Small margin between skill icons */
+        }
+
+        /* Questions section */
+        .questions-section {
+            margin: 20px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .questions-section h2 {
+            color: #1a3d7c;
+        }
+
     </style>
 </head>
 <body>
@@ -155,6 +189,7 @@
                 <a href="#testimonials"><i class="fas fa-comments section-icon"></i>Testimonials</a>
                 <a href="#booking"><i class="fas fa-calendar-check section-icon"></i>Book a Slot</a>
                 <a href="#contact"><i class="fas fa-envelope section-icon"></i>Contact Info</a>
+                <a href="#questions"><i class="fas fa-question-circle section-icon"></i>Send Questions</a>
             </nav>
             
             <section id="experience">
@@ -188,34 +223,32 @@
                             <li>Improved customer delivery experience by resolving fulfillment issues.</li>
                         </ul>
                     </li>
-                    <li>
-                        <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
-                        <ul>
-                            <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
-                            <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
-                        </ul>
-                    </li>
                 </ul>
             </section>
 
             <section id="skills">
                 <h2>Skills</h2>
-                <ul>
-                    <li>Supply Chain Management</li>
-                    <li>Data Analytics</li>
-                    <li>Optimization Techniques</li>
-                    <li>Problem Solving</li>
-                    <li>Logistics Optimization</li>
-                    <li>Project Management</li>
-                    <li>Client Engagement</li>
-                </ul>
+                <div class="skills-list">
+                    <div><i class="fas fa-truck skill-icon"></i> Supply Chain Management</div>
+                    <div><i class="fas fa-chart-line skill-icon"></i> Data Analytics</div>
+                    <div><i class="fas fa-cogs skill-icon"></i> Optimization Techniques</div>
+                    <div><i class="fas fa-lightbulb skill-icon"></i> Problem Solving</div>
+                    <div><i class="fas fa-balance-scale skill-icon"></i> Logistics Optimization</div>
+                    <div><i class="fas fa-clipboard-check skill-icon"></i> Project Management</div>
+                    <div><i class="fas fa-user-check skill-icon"></i> Client Engagement</div>
+                </div>
             </section>
 
             <section id="testimonials">
-                <h2>Client Testimonials</h2>
-                <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
-                <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
-                <p>"His ability to deliver tailored solutions helped us optimize our processes remarkably." - Client C</p>
+                <h2>Testimonials</h2>
+                <blockquote>
+                    <p>"Hemanth's insights into our supply chain processes were invaluable. His strategic approach led to significant efficiency improvements."</p>
+                    <footer>- Client Name, Position</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"His ability to analyze complex logistics challenges and provide actionable solutions is remarkable."</p>
+                    <footer>- Client Name, Position</footer>
+                </blockquote>
             </section>
 
             <section id="booking" class="slot-booking-section">
@@ -248,6 +281,19 @@
                 <p>Email: <a href="mailto:hemanth.gowda@example.com">hemanth.gowda@example.com</a></p>
                 <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/hemanthgowda" target="_blank">linkedin.com/in/hemanthgowda</a></p>
+            </section>
+
+            <section id="questions" class="questions-section">
+                <h2>Send Questions</h2>
+                <form action="#">
+                    <label for="question-email">Email:</label>
+                    <input type="email" id="question-email" name="question-email" required>
+                    
+                    <label for="question">Your Question:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+                    
+                    <input type="submit" value="Send Question">
+                </form>
             </section>
         </div>
     </div>
