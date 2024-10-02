@@ -16,39 +16,32 @@
             display: flex;
         }
 
-        * {
-            transition: all 0.3s ease-in-out;
-        }
-
         header {
             background-color: #1a3d7c;
             color: white;
             text-align: center;
-            padding: 50px 0;
-            background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70');
-            background-size: cover;
-            background-position: center;
+            padding: 20px 0;
             animation: fadeIn 2s ease;
         }
 
         header h1 {
             margin: 0;
-            font-size: 3em;
-            font-weight: bold;
+            font-size: 2.5em;
         }
 
         header p {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         nav {
             text-align: center;
             padding: 15px 0;
             background-color: #003366;
+            width: 100%;
         }
 
         nav a {
-            margin: 0 20px;
+            margin: 0 15px;
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -57,92 +50,75 @@
 
         nav a:hover {
             color: #1a3d7c;
-            transform: scale(1.1);
         }
 
         .container {
             display: flex;
-            max-width: 1000px;
-            margin: 40px auto;
             width: 100%;
         }
 
-        .left-column {
+        .left-panel {
             width: 30%;
-            padding: 30px;
+            padding: 20px;
             background-color: white;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-right: 20px;
+            margin: 20px;
         }
 
-        .right-column {
+        .right-panel {
             width: 70%;
-            padding: 30px;
-            background-color: white;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
         }
 
-        section h2 {
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
             color: #1a3d7c;
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #003366;
+            font-size: 1.8em;
+            border-bottom: 2px solid #003366;
             padding-bottom: 10px;
         }
 
-        section p, section ul li {
-            font-size: 1.1em;
-            line-height: 1.5;
-            margin-bottom: 20px;
+        .section p, .section ul li {
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             background-color: #003366;
             color: white;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 1.5em;
-        }
-
-        .testimonial-section {
-            background-color: #e6ffe6;
-            padding: 20px;
-            border-radius: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
         }
 
         .slot-booking-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             background-color: #fff0e6;
-            padding: 20px;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         .slot-booking-section h2 {
             color: #ff6600;
-            margin: 0;
+            font-size: 1.5em;
         }
 
         .slot-booking-section form {
             display: flex;
-            justify-content: space-between;
-            width: 100%;
+            flex-direction: column;
         }
 
         .slot-booking-section input,
         .slot-booking-section select {
-            margin-right: 10px;
+            margin-bottom: 10px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -153,7 +129,6 @@
             color: white;
             border: none;
             cursor: pointer;
-            width: auto;
         }
 
         .slot-booking-section input[type="submit"]:hover {
@@ -180,116 +155,79 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#testimonials">Testimonials</a>
+        <a href="#booking">Book a Slot</a>
         <a href="#contact">Contact Info</a>
     </nav>
 
     <div class="container">
-        <div class="left-column">
-            <section id="about">
+        <div class="left-panel">
+            <section id="about" class="section">
                 <h2>About Me</h2>
                 <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
-                <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation. In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
+                <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation.</p>
             </section>
-
-            <section id="profile">
+            
+            <section id="profile" class="section">
                 <h2>Profile</h2>
-                <p>Digital Supply Chain | SaaS | Optimization | Industrial Engineering | Operations Research</p>
+                <p>Skilled in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
             </section>
         </div>
 
-        <div class="right-column">
-            <section id="experience">
+        <div class="right-panel">
+            <section id="experience" class="section">
                 <h2>Professional Experience</h2>
                 <ul>
                     <li>
                         <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
                         <ul>
                             <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
-                            <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                            <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
-                            <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
-                            <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
+                            <li>Specialize in digitizing and optimizing last-mile delivery.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
                         <ul>
-                            <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                            <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
-                            <li>Achieved cost savings and improved overall supply chain performance.</li>
+                            <li>Built comprehensive supply chain models for Kraft Heinz - US.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
                         <ul>
-                            <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
-                            <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
-                            <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
-                            <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
-                            <li>Improved customer delivery experience by resolving fulfillment issues.</li>
+                            <li>Developed strategic initiatives to enhance fulfillment center operations.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
                         <ul>
-                            <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
-                            <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
+                            <li>Conducted market analysis and customer behavior studies.</li>
                         </ul>
                     </li>
                 </ul>
             </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li>Supply Chain Optimization: Developed models for optimizing inventory management and logistics operations.</li>
-                    <li>Last-Mile Delivery Automation: Designed a solution for automating last-mile logistics for a leading e-commerce platform.</li>
-                    <li>Analytics Dashboard: Created a dashboard for tracking supply chain KPIs and metrics for a client in the logistics industry.</li>
-                </ul>
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Data Analytics and Visualization</li>
-                    <li>Supply Chain Management</li>
-                    <li>Logistics Optimization</li>
-                    <li>Operations Research</li>
-                    <li>Problem Solving</li>
-                </ul>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>B. M. S. College of Engineering</strong> - Bachelor's in Industrial Engineering and Management (2016-2020)</li>
-                </ul>
-            </section>
-
-            <section id="testimonials" class="testimonial-section">
+            <section id="testimonials" class="section">
                 <h2>Client Testimonials</h2>
-                <p>"Hemanth's expertise in supply chain design has greatly enhanced our operations. His insights and solutions have been invaluable!" - Client A</p>
-                <p>"Thanks to Hemanth's innovative approach, we've seen a significant improvement in our logistics efficiency." - Client B</p>
+                <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
+                <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
+                <p>"His ability to deliver tailored solutions helped us optimize our processes remarkably." - Client C</p>
             </section>
 
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p>Email: hemanth.gowda@example.com | Phone: +1234567890</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </section>
-            
-            <section class="slot-booking-section">
+            <section id="booking" class="slot-booking-section">
                 <h2>Book a Slot</h2>
-                <form>
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="email" placeholder="Email" name="email" required>
-                    <input type="date" name="date" required>
-                    <input type="time" name="time" required>
-                    <input type="submit" value="Book Now">
+                <form id="booking-form" action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <input type="submit" value="Book Slot">
                 </form>
             </section>
         </div>
