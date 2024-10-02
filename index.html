@@ -24,7 +24,7 @@
         header {
             background-color: #1a3d7c;
             color: white;
-            text-align: justify;
+            text-align: center;
             padding: 50px 0;
             background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70'); /* Replace with your own image */
             background-size: cover;
@@ -76,6 +76,7 @@
             border-radius: 10px;
             opacity: 0;
             animation: fadeInUp 1.5s forwards;
+            text-align: left; /* Improved text alignment */
         }
 
         section h2 {
@@ -110,7 +111,7 @@
 
         .projects li {
             display: flex;
-            align-items: justify;
+            align-items: center;
             margin-bottom: 20px;
             background-color: #e6f7ff;
             padding: 20px;
@@ -131,6 +132,53 @@
         /* Hover effect for project images */
         .projects li img:hover {
             transform: scale(1.1);
+        }
+
+        /* Slot Booking Section */
+        #booking {
+            background-color: #e6f2ff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #booking h2 {
+            text-align: center;
+            color: #1a3d7c;
+        }
+
+        #booking-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #booking-form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #booking-form input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 80%;
+            max-width: 400px;
+            margin-bottom: 15px;
+        }
+
+        #booking-form button {
+            background-color: #1a3d7c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #booking-form button:hover {
+            background-color: #003366;
         }
 
         /* Footer Styling */
@@ -193,7 +241,20 @@
                 transform: translateX(0);
             }
         }
+
     </style>
+    <!-- Link to the jQuery UI CSS for datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#date").datepicker({
+                dateFormat: "yy-mm-dd",
+                minDate: 0 // Prevent past dates
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -231,33 +292,14 @@
                 <ul>
                     <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
                     <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                    <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
-                    <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
-                    <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
+                    <li>Engage with clients spanning B2B, B2C, and 3PL to identify their challenges and design efficient solutions.</li>
                 </ul>
             </li>
             <li>
-                <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
+                <strong>Company ABC</strong> - Supply Chain Analyst (July 2020 - July 2023)
                 <ul>
-                    <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                    <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
-                    <li>Achieved cost savings and improved overall supply chain performance.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
-                <ul>
-                    <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
-                    <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
-                    <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
-                    <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
-                    <li>Improved customer delivery experience by resolving fulfillment issues.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
-                <ul>
-                    <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
+                    <li>Utilized advanced data analytics techniques to streamline supply chain processes, leading to a 15% cost reduction.</li>
+                    <li>Collaborated with cross-functional teams to implement strategies that improved inventory turnover and demand forecasting accuracy.</li>
                     <li>Analyzed supply chain processes to identify areas for improvement and cost reduction.</li>
                 </ul>
             </li>
@@ -333,7 +375,7 @@
             <input type="email" id="email" name="email" required>
             
             <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="text" id="date" name="date" required placeholder="Select Date" readonly>
             
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time" required>
