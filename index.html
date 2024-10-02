@@ -13,35 +13,37 @@
             padding: 0;
             background-color: #f9fafb;
             color: #333;
-            display: flex;
+        }
+        
+        * {
+            transition: all 0.3s ease-in-out;
         }
 
         header {
             background-color: #1a3d7c;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 50px 0;
+            background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70');
+            background-size: cover;
+            background-position: center;
             animation: fadeIn 2s ease;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            font-size: 1.2em;
+            font-size: 3em;
+            font-weight: bold;
         }
 
         nav {
             text-align: center;
             padding: 15px 0;
             background-color: #003366;
-            width: 100%;
         }
 
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -50,42 +52,44 @@
 
         nav a:hover {
             color: #1a3d7c;
+            transform: scale(1.1);
         }
 
         .container {
             display: flex;
-            width: 100%;
         }
 
-        .left-panel {
+        .left-section {
             width: 30%;
             padding: 20px;
+        }
+
+        .right-section {
+            width: 70%;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
             background-color: white;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin: 20px;
-        }
-
-        .right-panel {
-            width: 70%;
             padding: 20px;
-            margin: 20px;
         }
 
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
+        section h2 {
             color: #1a3d7c;
-            font-size: 1.8em;
-            border-bottom: 2px solid #003366;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #003366;
             padding-bottom: 10px;
         }
 
-        .section p, .section ul li {
-            line-height: 1.6;
-            margin-bottom: 15px;
+        section p, section ul li {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -93,22 +97,24 @@
             padding: 20px;
             background-color: #003366;
             color: white;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
         }
 
         .slot-booking-section {
             background-color: #fff0e6;
-            padding: 10px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
         }
 
         .slot-booking-section h2 {
             color: #ff6600;
-            font-size: 1.5em;
         }
 
         .slot-booking-section form {
@@ -150,62 +156,80 @@
 
     <nav>
         <a href="#about">About Me</a>
+        <a href="#profile">Profile</a>
         <a href="#experience">Professional Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#booking">Book a Slot</a>
         <a href="#contact">Contact Info</a>
     </nav>
 
     <div class="container">
-        <div class="left-panel">
-            <section id="about" class="section">
-                <h2>About Me</h2>
-                <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
-                <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation.</p>
-            </section>
-            
-            <section id="profile" class="section">
-                <h2>Profile</h2>
-                <p>Skilled in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
-            </section>
+        <div class="left-section">
+            <h2>Name</h2>
+            <p>Hemanth Gowda A R</p>
+            <h2>About Me</h2>
+            <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
+            <h2>Profile</h2>
+            <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation. In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
         </div>
 
-        <div class="right-panel">
-            <section id="experience" class="section">
+        <div class="right-section">
+            <section id="experience">
                 <h2>Professional Experience</h2>
                 <ul>
                     <li>
                         <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
                         <ul>
                             <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
-                            <li>Specialize in digitizing and optimizing last-mile delivery.</li>
+                            <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
+                            <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
+                            <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
+                            <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
                         <ul>
-                            <li>Built comprehensive supply chain models for Kraft Heinz - US.</li>
+                            <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
+                            <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
+                            <li>Achieved cost savings and improved overall supply chain performance.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
                         <ul>
-                            <li>Developed strategic initiatives to enhance fulfillment center operations.</li>
+                            <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
+                            <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
+                            <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
+                            <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
+                            <li>Improved customer delivery experience by resolving fulfillment issues.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
                         <ul>
-                            <li>Conducted market analysis and customer behavior studies.</li>
+                            <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
+                            <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
                         </ul>
                     </li>
                 </ul>
             </section>
 
-            <section id="testimonials" class="section">
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Supply Chain Management</li>
+                    <li>Data Analytics</li>
+                    <li>Optimization Techniques</li>
+                    <li>Problem Solving</li>
+                    <li>Logistics Optimization</li>
+                    <li>Project Management</li>
+                    <li>Client Engagement</li>
+                </ul>
+            </section>
+
+            <section id="testimonials">
                 <h2>Client Testimonials</h2>
                 <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
                 <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
@@ -214,27 +238,40 @@
 
             <section id="booking" class="slot-booking-section">
                 <h2>Book a Slot</h2>
-                <form id="booking-form" action="submit_form.php" method="POST">
+                <form action="#">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-
+                    
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-
+                    
                     <label for="date">Preferred Date:</label>
                     <input type="date" id="date" name="date" required>
-
+                    
                     <label for="time">Preferred Time:</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <input type="submit" value="Book Slot">
+                    <select id="time" name="time" required>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                    </select>
+                    
+                    <input type="submit" value="Book Now">
                 </form>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:hemanth.gowda@example.com">hemanth.gowda@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/hemanthgowda" target="_blank">linkedin.com/in/hemanthgowda</a></p>
             </section>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Hemanth Gowda. All Rights Reserved.</p>
+        <p>© 2024 Hemanth Gowda. All Rights Reserved.</p>
     </footer>
 
 </body>
