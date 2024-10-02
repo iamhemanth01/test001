@@ -15,7 +15,7 @@
             color: #333;
             display: flex;
         }
-        
+
         * {
             transition: all 0.3s ease-in-out;
         }
@@ -120,25 +120,29 @@
         }
 
         .slot-booking-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #fff0e6;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
         }
 
         .slot-booking-section h2 {
             color: #ff6600;
+            margin: 0;
         }
 
         .slot-booking-section form {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
         }
 
         .slot-booking-section input,
         .slot-booking-section select {
-            margin-bottom: 10px;
+            margin-right: 10px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -149,6 +153,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            width: auto;
         }
 
         .slot-booking-section input[type="submit"]:hover {
@@ -175,7 +180,6 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#booking">Book a Slot</a>
         <a href="#contact">Contact Info</a>
     </nav>
 
@@ -235,27 +239,56 @@
                 </ul>
             </section>
 
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Supply Chain Optimization: Developed models for optimizing inventory management and logistics operations.</li>
+                    <li>Last-Mile Delivery Automation: Designed a solution for automating last-mile logistics for a leading e-commerce platform.</li>
+                    <li>Analytics Dashboard: Created a dashboard for tracking supply chain KPIs and metrics for a client in the logistics industry.</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Data Analytics and Visualization</li>
+                    <li>Supply Chain Management</li>
+                    <li>Logistics Optimization</li>
+                    <li>Operations Research</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>B. M. S. College of Engineering</strong> - Bachelor's in Industrial Engineering and Management (2016-2020)</li>
+                </ul>
+            </section>
+
             <section id="testimonials" class="testimonial-section">
                 <h2>Client Testimonials</h2>
                 <p>"Hemanth's expertise in supply chain design has greatly enhanced our operations. His insights and solutions have been invaluable!" - Client A</p>
                 <p>"Thanks to Hemanth's innovative approach, we've seen a significant improvement in our logistics efficiency." - Client B</p>
             </section>
 
-            <section id="booking" class="slot-booking-section">
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p>Email: hemanth.gowda@example.com | Phone: +1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </section>
+            
+            <section class="slot-booking-section">
                 <h2>Book a Slot</h2>
                 <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="time">Preferred Time:</label>
-                    <input type="time" id="time" name="time" required>
-
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
                     <input type="submit" value="Book Now">
                 </form>
             </section>
@@ -263,13 +296,6 @@
     </div>
 
     <footer>
-        <h2>Contact Information</h2>
-        <p>Email: hemanth.gowda@example.com | Phone: +1234567890</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
         <p>&copy; 2024 Hemanth Gowda. All Rights Reserved.</p>
     </footer>
 
