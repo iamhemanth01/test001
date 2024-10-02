@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemanth Gowda - Supply Chain Planning & Design Portfolio</title>
     <meta name="description" content="Portfolio of Hemanth Gowda - Supply Chain Planning & Design Professional">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Calibri', sans-serif;
@@ -14,19 +14,17 @@
             background-color: #f9fafb;
             color: #333;
         }
-
-        /* Smooth transition effect */
+        
         * {
             transition: all 0.3s ease-in-out;
         }
 
-        /* Header Styling */
         header {
             background-color: #1a3d7c;
             color: white;
             text-align: center;
             padding: 50px 0;
-            background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70'); /* Replace with your own image */
+            background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70');
             background-size: cover;
             background-position: center;
             animation: fadeIn 2s ease;
@@ -36,15 +34,12 @@
             margin: 0;
             font-size: 3em;
             font-weight: bold;
-            animation: slideInFromLeft 1.5s ease;
         }
 
         header p {
             font-size: 1.5em;
-            animation: slideInFromRight 1.5s ease;
         }
 
-        /* Navigation Styling */
         nav {
             text-align: center;
             padding: 15px 0;
@@ -57,16 +52,13 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
-            position: relative;
         }
 
-        /* Hover animation for navigation links */
         nav a:hover {
             color: #1a3d7c;
             transform: scale(1.1);
         }
 
-        /* Section Styling */
         section {
             margin: 40px auto;
             max-width: 1000px;
@@ -74,9 +66,6 @@
             background-color: white;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            opacity: 0;
-            animation: fadeInUp 1.5s forwards;
-            text-align: left; /* Improved text alignment */
         }
 
         section h2 {
@@ -94,100 +83,11 @@
             margin-bottom: 20px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 20px;
-        }
-
-        /* Projects Section */
-        .projects ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        .projects li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            background-color: #e6f7ff;
-            padding: 20px;
-            border-left: 5px solid #1a3d7c;
-            border-radius: 10px;
-            opacity: 0;
-            animation: fadeInUp 1.5s forwards;
-            animation-delay: 0.5s;
-        }
-
-        .projects li img {
-            margin-right: 20px;
-            width: 150px;
-            height: 100px;
-            border-radius: 10px;
-        }
-
-        /* Hover effect for project images */
-        .projects li img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Slot Booking Section */
-        #booking {
-            background-color: #e6f2ff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        #booking h2 {
-            text-align: center;
-            color: #1a3d7c;
-        }
-
-        #booking-form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #booking-form label {
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
-
-        #booking-form input {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            width: 80%;
-            max-width: 400px;
-            margin-bottom: 15px;
-        }
-
-        #booking-form button {
-            background-color: #1a3d7c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #booking-form button:hover {
-            background-color: #003366;
-        }
-
-        /* Footer Styling */
         footer {
             text-align: center;
             padding: 30px;
             background-color: #003366;
             color: white;
-            animation: fadeIn 2s ease;
         }
 
         .social-icons a {
@@ -195,76 +95,62 @@
             text-decoration: none;
             color: white;
             font-size: 1.5em;
-            transform: scale(1);
         }
 
-        /* Hover effect for social icons */
-        .social-icons a:hover {
-            transform: scale(1.2);
+        .testimonial-section {
+            background-color: #e6ffe6;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        /* Keyframe animations */
+        .slot-booking-section {
+            background-color: #fff0e6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slot-booking-section h2 {
+            color: #ff6600;
+        }
+
+        .slot-booking-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slot-booking-section input,
+        .slot-booking-section select {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .slot-booking-section input[type="submit"] {
+            background-color: #1a3d7c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .slot-booking-section input[type="submit"]:hover {
+            background-color: #003366;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideInFromLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInFromRight {
-            from {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
     </style>
-    <!-- Link to the jQuery UI CSS for datepicker -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(function() {
-            $("#date").datepicker({
-                dateFormat: "yy-mm-dd",
-                minDate: 0 // Prevent past dates
-            });
-        });
-    </script>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <h1>Hemanth Gowda A R</h1>
         <p>Digital Supply Chain | SaaS | Optimization | Industrial Engineering | Operations Research</p>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="#about">About Me</a>
         <a href="#experience">Professional Experience</a>
@@ -272,18 +158,16 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact Info</a>
         <a href="#booking">Book a Slot</a>
+        <a href="#contact">Contact Info</a>
     </nav>
 
-    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
         <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation. In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
     </section>
 
-    <!-- Professional Experience Section -->
     <section id="experience" style="background-color: #e6ffe6;">
         <h2>Professional Experience</h2>
         <ul>
@@ -292,106 +176,73 @@
                 <ul>
                     <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
                     <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                    <li>Engage with clients spanning B2B, B2C, and 3PL to identify their challenges and design efficient solutions.</li>
+                    <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
+                    <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
+                    <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
                 </ul>
             </li>
             <li>
-                <strong>Company ABC</strong> - Supply Chain Analyst (July 2020 - July 2023)
+                <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
                 <ul>
-                    <li>Utilized advanced data analytics techniques to streamline supply chain processes, leading to a 15% cost reduction.</li>
-                    <li>Collaborated with cross-functional teams to implement strategies that improved inventory turnover and demand forecasting accuracy.</li>
-                    <li>Analyzed supply chain processes to identify areas for improvement and cost reduction.</li>
+                    <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
+                    <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
+                    <li>Achieved cost savings and improved overall supply chain performance.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
+                <ul>
+                    <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
+                    <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
+                    <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
+                    <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
+                    <li>Improved customer delivery experience by resolving fulfillment issues.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
+                <ul>
+                    <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
+                    <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
                 </ul>
             </li>
         </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <img src="https://via.placeholder.com/150" alt="Project 1">
-                <div>
-                    <h3>Project Title 1</h3>
-                    <p>Description of project 1. Highlighting the main objectives, outcomes, and technologies used.</p>
-                </div>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/150" alt="Project 2">
-                <div>
-                    <h3>Project Title 2</h3>
-                    <p>Description of project 2. Highlighting the main objectives, outcomes, and technologies used.</p>
-                </div>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/150" alt="Project 3">
-                <div>
-                    <h3>Project Title 3</h3>
-                    <p>Description of project 3. Highlighting the main objectives, outcomes, and technologies used.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Data Analysis, Supply Chain Optimization, Project Management, Problem-Solving, Cross-Functional Team Collaboration, Logistics Management, Process Improvement, Customer Relationship Management.</p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>B.M.S. College of Engineering</strong> - Bachelor's in Industrial Engineering and Management (Graduated: 2020)</p>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" style="background-color: #f0f8ff;">
+    <section id="testimonials" class="testimonial-section">
         <h2>Client Testimonials</h2>
-        <ul>
-            <li><strong>Client Name 1:</strong> "Hemanth's insights and strategies have transformed our supply chain efficiency. Highly recommended!"</li>
-            <li><strong>Client Name 2:</strong> "An exceptional professional with a keen understanding of the logistics landscape. Great results!"</li>
-            <li><strong>Client Name 3:</strong> "Hemanth consistently delivers innovative solutions that drive significant business value."</li>
-        </ul>
+        <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
+        <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
+        <p>"His ability to deliver tailored solutions helped us optimize our processes remarkably." - Client C</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:hemanth@example.com">hemanth@example.com</a></p>
-        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/hemanthgowda" target="_blank">linkedin.com/in/hemanthgowda</a></p>
-    </section>
-
-    <!-- Slot Booking Section -->
-    <section id="booking">
+    <section id="booking" class="slot-booking-section">
         <h2>Book a Slot</h2>
         <form id="booking-form" action="submit_form.php" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="date">Preferred Date:</label>
-            <input type="text" id="date" name="date" required placeholder="Select Date" readonly>
-            
+            <input type="date" id="date" name="date" required>
+
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time" required>
-            
-            <button type="submit">Book Now</button>
+
+            <input type="submit" value="Book Slot">
         </form>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Hemanth Gowda A R. All rights reserved.</p>
+    <footer id="contact">
+        <p>Contact Information: +91 9876543210 | hemanthgowda@example.com</p>
         <div class="social-icons">
-            <a href="https://twitter.com/yourprofile" target="_blank">🐦</a>
-            <a href="https://www.linkedin.com/in/hemanthgowda" target="_blank">🔗</a>
-            <a href="https://github.com/yourprofile" target="_blank">🐙</a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
+        <p>&copy; 2024 Hemanth Gowda. All rights reserved.</p>
     </footer>
 
 </body>
