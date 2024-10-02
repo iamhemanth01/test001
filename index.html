@@ -13,6 +13,7 @@
             padding: 0;
             background-color: #f9fafb;
             color: #333;
+            display: flex; /* Add flexbox to align content */
         }
         
         * {
@@ -28,6 +29,7 @@
             background-size: cover;
             background-position: center;
             animation: fadeIn 2s ease;
+            width: 100%; /* Full width */
         }
 
         header h1 {
@@ -44,6 +46,7 @@
             text-align: center;
             padding: 15px 0;
             background-color: #003366;
+            width: 100%; /* Full width */
         }
 
         nav a {
@@ -59,13 +62,32 @@
             transform: scale(1.1);
         }
 
+        .container {
+            display: flex; /* Flex container for side-by-side layout */
+            max-width: 1200px; /* Limit container width */
+            margin: 40px auto; /* Center the container */
+            padding: 0 20px; /* Add padding */
+        }
+
+        .profile {
+            width: 30%; /* Left side profile section */
+            padding: 20px; /* Padding for profile section */
+            background-color: #fff; /* Background color for profile section */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow for profile */
+            border-radius: 10px; /* Rounded corners */
+            margin-right: 20px; /* Space between profile and other sections */
+        }
+
+        .main-content {
+            width: 70%; /* Right side main content */
+        }
+
         section {
-            margin: 40px auto;
-            max-width: 1000px;
             padding: 30px;
             background-color: white;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            margin-bottom: 20px; /* Space between sections */
         }
 
         section h2 {
@@ -79,8 +101,8 @@
 
         section p, section ul li {
             font-size: 1.1em;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            line-height: 1.5; /* Reduced line height for optimal readability */
+            margin-bottom: 10px; /* Reduced space between lines */
         }
 
         footer {
@@ -108,6 +130,8 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px; /* Limit the width of the booking section */
+            margin: auto; /* Center the booking section */
         }
 
         .slot-booking-section h2 {
@@ -162,78 +186,88 @@
         <a href="#contact">Contact Info</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
-        <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation. In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
-    </section>
+    <div class="container">
+        <div class="profile">
+            <h2>Profile Details</h2>
+            <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering.</p>
+            <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company.</p>
+        </div>
 
-    <section id="experience" style="background-color: #e6ffe6;">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li>
-                <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
+                <p>In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
+            </section>
+
+            <section id="experience" style="background-color: #e6ffe6;">
+                <h2>Professional Experience</h2>
                 <ul>
-                    <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
-                    <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                    <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
-                    <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
-                    <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
+                    <li>
+                        <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
+                        <ul>
+                            <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
+                            <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
+                            <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
+                            <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
+                            <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
+                        <ul>
+                            <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
+                            <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
+                            <li>Achieved cost savings and improved overall supply chain performance.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
+                        <ul>
+                            <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
+                            <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
+                            <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
+                            <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
+                            <li>Improved customer delivery experience by resolving fulfillment issues.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
+                        <ul>
+                            <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
+                            <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
-                <ul>
-                    <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                    <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
-                    <li>Achieved cost savings and improved overall supply chain performance.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
-                <ul>
-                    <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
-                    <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
-                    <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
-                    <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
-                    <li>Improved customer delivery experience by resolving fulfillment issues.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
-                <ul>
-                    <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
-                    <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+            </section>
 
-    <section id="testimonials" class="testimonial-section">
-        <h2>Client Testimonials</h2>
-        <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
-        <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
-        <p>"His ability to deliver tailored solutions helped us optimize our processes remarkably." - Client C</p>
-    </section>
+            <section id="testimonials" class="testimonial-section">
+                <h2>Client Testimonials</h2>
+                <p>"Hemanth's insights and solutions significantly improved our logistics operations. Highly recommended!" - Client A</p>
+                <p>"A dedicated professional who understands supply chain intricacies. Fantastic to work with!" - Client B</p>
+                <p>"His ability to deliver tailored solutions helped us optimize our processes remarkably." - Client C</p>
+            </section>
 
-    <section id="booking" class="slot-booking-section">
-        <h2>Book a Slot</h2>
-        <form id="booking-form" action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <section id="booking" class="slot-booking-section">
+                <h2>Book a Slot</h2>
+                <form id="booking-form" action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
 
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time" required>
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
 
-            <input type="submit" value="Book Slot">
-        </form>
-    </section>
+                    <input type="submit" value="Book Slot">
+                </form>
+            </section>
+        </div>
+    </div>
 
     <footer id="contact">
         <p>Contact Information: +91 9876543210 | hemanthgowda@example.com</p>
