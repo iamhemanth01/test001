@@ -12,8 +12,8 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            font-size: 1.2em; /* Increased font size */
-            line-height: 1.6; /* Improved line height */
+            font-size: 1rem; /* Base font size for the page */
+            line-height: 1.6; /* Improve line height for readability */
         }
 
         * {
@@ -33,7 +33,7 @@
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 25px; /* Increased padding */
+            padding: 20px;
         }
 
         .left-section {
@@ -42,7 +42,7 @@
             background-color: #ffffff;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-right: 25px; /* Increased margin */
+            margin-right: 25px;
             position: sticky;
             top: 20px;
         }
@@ -57,12 +57,12 @@
             background-color: white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            padding: 35px; /* Increased padding */
+            padding: 25px;
             background: linear-gradient(135deg, #ffffff, #f4f4f9);
         }
 
         .name {
-            font-size: 2.4em;
+            font-size: 2rem;
             font-weight: bold;
             margin-bottom: 20px;
             text-align: center;
@@ -70,19 +70,19 @@
         }
 
         section h2 {
-            color: #003366; /* Different color for headings */
-            font-size: 1.8em; /* Uniform font size for headings */
+            color: #003366;
+            font-size: 1.5rem;
             font-weight: bold;
-            margin-bottom: 20px; /* Increased spacing below headings */
+            margin-bottom: 20px;
             border-bottom: 3px solid #003366;
             padding-bottom: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         }
 
         section p, section ul li {
-            font-size: 1.2em; /* Uniform font size for paragraph and list items */
-            line-height: 1.6; /* Improved line height */
-            margin-bottom: 15px; /* Increased spacing between paragraphs and list items */
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
             color: #333;
         }
 
@@ -98,7 +98,7 @@
             margin: 0 10px;
             text-decoration: none;
             color: white;
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
 
         .slot-booking-section {
@@ -111,7 +111,7 @@
 
         .slot-booking-section h2 {
             color: #ff6600;
-            font-size: 1.8em; /* Uniform font size for booking section heading */
+            font-size: 1.5rem;
         }
 
         .slot-booking-section form {
@@ -147,7 +147,7 @@
         .section-icon {
             margin-right: 10px;
             color: #1a3d7c;
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
 
         .skills-list {
@@ -171,7 +171,7 @@
         .skill-icon {
             margin-right: 10px;
             color: #1a3d7c;
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
 
         blockquote {
@@ -180,12 +180,12 @@
             margin: 20px 0;
             border-left: 5px solid #1a3d7c;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            font-size: 1.2em; /* Uniform font size for blockquotes */
+            font-size: 1rem;
         }
 
         blockquote footer {
             text-align: right;
-            font-size: 1em;
+            font-size: 1rem;
             color: #555;
         }
 
@@ -201,7 +201,7 @@
         }
 
         nav a {
-            font-size: 1.3em;
+            font-size: 1.2rem;
             color: #1a3d7c;
             text-decoration: none;
             margin: 5px 15px;
@@ -212,6 +212,19 @@
 
         nav a:hover {
             background-color: #d1e0ff;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-section, .right-section {
+                width: 100%;
+            }
+            body {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -263,14 +276,6 @@
                             <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies, thereby enhancing operational effectiveness and customer service.</li>
                             <li>Utilized advanced analytics and strategic planning to achieve cost savings and improve overall supply chain performance.</li>
                         </ul>
-                        <strong>Business Analyst - SC Planning</strong><br>
-                        <em>January 2022 - February 2023 (1 year 2 months)</em><br>
-                        <strong>Bengaluru, Karnataka, India</strong>
-                        <ul>
-                            <li>Managed a diverse portfolio of over 100 SKUs across 11 suppliers, optimizing inventory and supplier performance.</li>
-                            <li>Automated CFR (Case Fill Rate) and RDD (Requested Delivery Date) reporting to enhance visibility and decision-making.</li>
-                            <li>Facilitated improved communication between the repack facility, logistics, and suppliers, ensuring better visibility and on-time delivery.</li>
-                        </ul>
                     </li>
                     <li>
                         <strong>Jumbotail</strong><br>
@@ -283,7 +288,6 @@
                             <li>Enhanced inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
                             <li>Reduced payment issues from 6% to 3% through implementation of Bill to Bill credit systems.</li>
                             <li>Established processes for launching and expanding 10 new Fulfillment Centers and hubs.</li>
-                            <li>Improved customer delivery experience by resolving fulfillment issues.</li>
                         </ul>
                     </li>
                     <li>
@@ -293,8 +297,6 @@
                         <ul>
                             <li>Implemented streamlined last mile and line haul planning processes, reducing planning time by approximately 43.75%, from 4 hours to 2 hours and 15 minutes.</li>
                             <li>Utilized advanced analytics to systematically analyze customer feedback, identify key issues, and develop targeted strategies for continuous improvement in customer satisfaction.</li>
-                            <li>Employed predictive analytics for strategic resource planning and allocation, optimizing workforce and equipment utilization to achieve maximum productivity and cost-efficiency.</li>
-                            <li>Achieved a 100% reduction in complaints from Field Executives by optimizing route planning.</li>
                         </ul>
                     </li>
                 </ul>
