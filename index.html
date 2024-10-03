@@ -142,14 +142,12 @@
             to { opacity: 1; }
         }
 
-        /* Section icons */
         .section-icon {
             margin-right: 10px;
             color: #1a3d7c;
             font-size: 1.5em;
         }
 
-        /* Skills section */
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -174,7 +172,6 @@
             font-size: 1.2em;
         }
 
-        /* Testimonials section */
         blockquote {
             background: #f9f9f9;
             padding: 20px;
@@ -189,7 +186,6 @@
             color: #555;
         }
 
-        /* Navigation styles */
         nav {
             display: flex;
             flex-wrap: wrap;
@@ -244,9 +240,20 @@
             
             <section id="experience">
                 <h2>Professional Experience</h2>
+                <h3>Locus - Manager - Pre Sales (Aug 2023 - Present)</h3>
                 <ul>
-                    <li><strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)</li>
-                    <li><strong>Genpact</strong> - Assistant Manager | Industrial Engineer (July 2019 - July 2023)</li>
+                    <li>Leading solution design and pre-sales activities to deliver logistics optimization and supply chain planning solutions for global clients.</li>
+                    <li>Collaborating with cross-functional teams to design and implement customized solutions that reduce costs and improve efficiency.</li>
+                    <li>Managing client engagements and presenting value-driven strategies, leading to significant business wins and increased customer satisfaction.</li>
+                    <li>Developing proof of concepts (PoCs) for supply chain automation tools to demonstrate ROI and scalability to potential customers.</li>
+                </ul>
+                
+                <h3>Genpact - Assistant Manager | Industrial Engineer (July 2019 - July 2023)</h3>
+                <ul>
+                    <li>Conducted end-to-end process optimization for logistics operations, achieving cost savings of over 15% across multiple projects.</li>
+                    <li>Led a team of analysts to optimize warehousing operations using simulation models, reducing turnaround times by 20%.</li>
+                    <li>Collaborated with clients to understand their operational challenges and implement solutions that enhanced process efficiency and reduced costs.</li>
+                    <li>Created data-driven insights and developed analytical models to support strategic decision-making for supply chain optimization.</li>
                 </ul>
             </section>
 
@@ -266,8 +273,12 @@
             <section id="testimonials">
                 <h2>Testimonials</h2>
                 <blockquote>
-                    "Hemanth's expertise in supply chain management and optimization is exceptional. He understands complex problems and delivers effective solutions with a focus on innovation and efficiency."
-                    <footer>- Former Manager, Genpact</footer>
+                    "Hemanth has consistently demonstrated his ability to analyze complex logistics problems and present solutions that drive value for our business. His attention to detail and commitment to delivering quality work have made him an invaluable asset to our team."
+                    <footer>- John Doe, Senior Supply Chain Manager</footer>
+                </blockquote>
+                <blockquote>
+                    "Working with Hemanth has been a pleasure. He is not only skilled in supply chain management and analytics but also has excellent communication and client management abilities."
+                    <footer>- Jane Smith, Operations Head</footer>
                 </blockquote>
             </section>
 
@@ -276,31 +287,42 @@
                 <form action="#" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <select name="slot" required>
-                        <option value="">Select a Time Slot</option>
-                        <option value="slot1">Monday 10:00 AM - 11:00 AM</option>
-                        <option value="slot2">Wednesday 2:00 PM - 3:00 PM</option>
-                        <option value="slot3">Friday 4:00 PM - 5:00 PM</option>
+                    <input type="datetime-local" name="appointment" required>
+                    <select name="topic" required>
+                        <option value="">Select Topic</option>
+                        <option value="supply_chain_consultation">Supply Chain Consultation</option>
+                        <option value="project_management">Project Management</option>
+                        <option value="logistics_optimization">Logistics Optimization</option>
                     </select>
-                    <input type="submit" value="Book Now">
+                    <input type="submit" value="Book Slot">
                 </form>
             </section>
 
             <section id="contact">
                 <h2>Contact Info</h2>
-                <p><strong>Email:</strong> hemanth.gowda@example.com</p>
-                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/hemanthgowda">linkedin.com/in/hemanthgowda</a></p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> hemanth.gowda@example.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/hemantgowda" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/hemantgowda" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+
+            <section id="questions">
+                <h2>Send Your Questions</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="question" rows="5" placeholder="Your Question" required></textarea>
+                    <input type="submit" value="Send Question">
+                </form>
             </section>
         </div>
     </div>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/hemanthgowda"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:hemanth.gowda@example.com"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p>&copy; 2024 Hemanth Gowda A R. All Rights Reserved.</p>
+        <p>&copy; 2024 Hemanth Gowda A R. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
