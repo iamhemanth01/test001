@@ -34,11 +34,11 @@
             margin: 0 auto;
             padding: 20px;
             gap: 20px;
-            flex-wrap: wrap; /* Adjusts layout for mobile */
+            flex-wrap: wrap;
         }
 
         .left-section {
-            width: 30%;
+            flex-basis: 30%;
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@
         }
 
         .right-section {
-            width: 68%;
+            flex-basis: 68%;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -90,9 +90,9 @@
         nav {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             margin-bottom: 30px;
-            padding: 20px;
+            padding: 15px 0;
             background-color: #f4f4f9;
             border-radius: 10px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -102,8 +102,7 @@
             font-size: 1.2rem;
             color: #1a3d7c;
             text-decoration: none;
-            margin: 5px 15px;
-            padding: 12px 15px;
+            padding: 12px 20px;
             border-radius: 5px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -213,7 +212,7 @@
             </nav>
 
             <!-- Professional Experience Section -->
-               <section id="experience" style="background-color: #e6ffe6;">
+            <section id="experience" style="background-color: #e6ffe6;">
                 <h2>Professional Experience</h2>
                 <ul>
                     <li>
@@ -262,7 +261,9 @@
                         </ul>
                     </li>
                 </ul>
-            </section>            <!-- Skills Section -->
+            </section>       
+
+            <!-- Skills Section -->
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skills-list">
@@ -270,6 +271,7 @@
                     <div>Data Analytics</div>
                     <div>Optimization Techniques</div>
                     <div>Logistics Optimization</div>
+                    <div>Client Engagement</div>
                 </div>
             </section>
 
@@ -280,9 +282,13 @@
                     <p>"Hemanth's insights have transformed our supply chain strategy, leading to significant cost savings."</p>
                     <footer>- Client A, CEO of ABC Corp</footer>
                 </blockquote>
+                <blockquote>
+                    <p>"His attention to detail and problem-solving skills have been invaluable to our projects."</p>
+                    <footer>- Client B, COO of DEF Ltd</footer>
+                </blockquote>
             </section>
 
-            <!-- Booking Section -->
+            <!-- Slot Booking Section -->
             <section id="booking" class="slot-booking-section">
                 <h2>Book a Slot</h2>
                 <form action="#" method="post">
