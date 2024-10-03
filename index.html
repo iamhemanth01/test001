@@ -1,344 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Hemanth Gowda - Supply Chain Planning & Design Professional">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Calibri', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        * {
-            transition: all 0.3s ease-in-out;
-        }
-
-        header {
-            background: linear-gradient(135deg, rgba(26, 61, 124, 0.85), rgba(255, 255, 255, 0.5)), url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 40px 0;
-            animation: fadeIn 2s ease;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .left-section {
-            width: 30%;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin-right: 20px;
-            position: sticky;
-            top: 20px;
-        }
-
-        .right-section {
-            width: 70%;
-            padding: 20px;
-        }
-
-        section {
-            margin: 20px 0;
-            background-color: white;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 30px;
-            background: linear-gradient(135deg, #ffffff, #f4f4f9);
-        }
-
-        .name {
-            font-size: 2.4em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #1a3d7c;
-        }
-
-        section h2 {
-            color: #1a3d7c;
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            border-bottom: 3px solid #003366;
-            padding-bottom: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        }
-
-        section p, section ul li {
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #003366;
-            color: white;
-            margin-top: 30px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 1.5em;
-        }
-
-        .slot-booking-section {
-            background-color: #fff7e6;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease;
-        }
-
-        .slot-booking-section h2 {
-            color: #ff6600;
-        }
-
-        .slot-booking-section form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .slot-booking-section input,
-        .slot-booking-section select {
-            margin-bottom: 15px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .slot-booking-section input[type="submit"] {
-            background-color: #1a3d7c;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .slot-booking-section input[type="submit"]:hover {
-            background-color: #003366;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .section-icon {
-            margin-right: 10px;
-            color: #1a3d7c;
-            font-size: 1.5em;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-top: 15px;
-            justify-content: center;
-        }
-
-        .skills-list div {
-            display: flex;
-            align-items: center;
-            background-color: #e6f2ff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-
-        .skill-icon {
-            margin-right: 10px;
-            color: #1a3d7c;
-            font-size: 1.2em;
-        }
-
-        blockquote {
-            background: #f9f9f9;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 5px solid #1a3d7c;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        blockquote footer {
-            text-align: right;
-            font-size: 1em;
-            color: #555;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 30px;
-            background-color: #f4f4f9;
-            padding: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        nav a {
-            font-size: 1.3em;
-            color: #1a3d7c;
-            text-decoration: none;
-            margin: 5px 15px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a:hover {
-            background-color: #d1e0ff;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <div class="left-section">
-            <div class="name">Hemanth Gowda A R</div>
-            <p>Digital Supply Chain | SaaS | Optimization | Industrial Engineering | Operations Research</p>
-            <h2>About Me</h2>
-            <p>I hold a bachelor's degree in Industrial Engineering and Management from B. M. S. College of Engineering. I have 4+ years of experience in supply chain planning and design, working with e-commerce, logistics, and SaaS organizations.</p>
-            <h2>Profile</h2>
-            <p>Currently, I am a Manager-Pre Sales at Locus, a SaaS company that provides solutions for logistics optimization and automation. In this role, I use my skills in data analytics, problem-solving, and optimization techniques to understand customer needs, design solutions, and demonstrate value propositions.</p>
-        </div>
-
-        <div class="right-section">
-            <nav>
-                <a href="#experience"><i class="fas fa-briefcase section-icon"></i>Professional Experience</a>
-                <a href="#skills"><i class="fas fa-cogs section-icon"></i>Skills</a>
-                <a href="#testimonials"><i class="fas fa-comments section-icon"></i>Testimonials</a>
-                <a href="#booking"><i class="fas fa-calendar-check section-icon"></i>Book a Slot</a>
-                <a href="#contact"><i class="fas fa-envelope section-icon"></i>Contact Info</a>
-                <a href="#questions"><i class="fas fa-question-circle section-icon"></i>Send Questions</a>
-            </nav>
-            
-            <section id="experience">
-                <h2>Professional Experience</h2>
+  <!-- Professional Experience Section -->
+    <section id="experience" style="background-color: #e6ffe6;">
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>
+                <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
                 <ul>
-                    <li>
-                        <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
-                        <ul>
-                            <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
-                            <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                            <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
-                            <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
-                            <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
-                        <ul>
-                            <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                            <li>Enhanced operational effectiveness through innovative data-driven recommendations for diverse clients.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Walmart</strong> - Supply Chain Analyst (June 2019 - February 2023)
-                        <ul>
-                            <li>Led the development and optimization of the supply chain network to support the company's growth and market demands.</li>
-                            <li>Utilized data analytics to forecast demand and streamline inventory management, ensuring timely deliveries and minimal wastage.</li>
-                            <li>Collaborated with cross-functional teams to implement process improvements, increasing operational efficiency.</li>
-                        </ul>
-                    </li>
+                    <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
+                    <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
+                    <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
+                    <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
+                    <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
                 </ul>
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <div><i class="fas fa-truck skill-icon"></i> Supply Chain Management</div>
-                    <div><i class="fas fa-chart-line skill-icon"></i> Data Analytics</div>
-                    <div><i class="fas fa-cogs skill-icon"></i> Optimization Techniques</div>
-                    <div><i class="fas fa-brain skill-icon"></i> Problem Solving</div>
-                    <div><i class="fas fa-boxes skill-icon"></i> Logistics Optimization</div>
-                    <div><i class="fas fa-project-diagram skill-icon"></i> Project Management</div>
-                    <div><i class="fas fa-users skill-icon"></i> Client Engagement</div>
-                </div>
-            </section>
-
-            <section id="testimonials">
-                <h2>Testimonials</h2>
-                <blockquote>
-                    "Hemanth has consistently demonstrated his ability to analyze complex logistics problems and present solutions that drive value for our business. His attention to detail and commitment to delivering quality work have made him an invaluable asset to our team."
-                    <footer>- John Doe, Senior Supply Chain Manager</footer>
-                </blockquote>
-                <blockquote>
-                    "Working with Hemanth has been a pleasure. He is not only skilled in supply chain management and analytics but also has excellent communication and client management abilities."
-                    <footer>- Jane Smith, Operations Head</footer>
-                </blockquote>
-            </section>
-
-            <section id="booking" class="slot-booking-section">
-    <h2>Book a Slot</h2>
-    <form action="https://formspree.io/f/xbljrrbv" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="time">Preferred Time:</label>
-        <select id="time" name="time" required>
-            <option value="10:00">10:00 AM</option>
-            <option value="11:00">11:00 AM</option>
-            <option value="12:00">12:00 PM</option>
-            <option value="14:00">2:00 PM</option>
-            <option value="15:00">3:00 PM</option>
-        </select>
-        
-        <input type="submit" value="Book Now">
-    </form>
-</section>
-
-            <section id="contact">
-                <h2>Contact Info</h2>
-                <p><i class="fas fa-phone"></i> +91 9876543210</p>
-                <p><i class="fas fa-envelope"></i> hemanth.gowda@example.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
-                <div class="social-icons">
-                    <a href="https://linkedin.com/in/hemantgowda" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/hemantgowda" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </section>
-
-            <section id="questions">
-                <h2>Send Your Questions</h2>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="question" rows="5" placeholder="Your Question" required></textarea>
-                    <input type="submit" value="Send Question">
-                </form>
-            </section>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Hemanth Gowda A R. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            </li>
+            <li>
+                <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
+                <ul>
+                    <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
+                    <li>Enhanced operational effectiveness and customer service through advanced analytics and strategic planning.</li>
+                    <li>Achieved cost savings and improved overall supply chain performance.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Jumbotail</strong> - Supply Chain Associate - Planning and Design (February 2021 - December 2021)
+                <ul>
+                    <li>Developed and implemented strategic initiatives to enhance the efficiency of fulfillment center operations and last-mile logistics.</li>
+                    <li>Improved inventory accuracy from 70% to 90% in FMCG warehouses and from 95% to 99% in staples warehouses.</li>
+                    <li>Reduced payment issues from 6% to 3% through the implementation of Bill to Bill credit systems.</li>
+                    <li>Established processes for launching and expanding 10 new fulfillment centers and hubs.</li>
+                    <li>Improved customer delivery experience by resolving fulfillment issues.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Doodhwala</strong> - Supply Chain Intern (June 2019)
+                <ul>
+                    <li>Conducted market analysis and customer behavior studies to assist in strategic business planning.</li>
+                    <li>Analyzed customer demographics, preferences, and behaviors for market positioning and differentiation opportunities.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
