@@ -278,20 +278,29 @@
             </section>
 
             <section id="booking" class="slot-booking-section">
-                <h2>Book a Slot</h2>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="datetime-local" name="appointment" required>
-                    <select name="topic" required>
-                        <option value="">Select Topic</option>
-                        <option value="supply_chain_consultation">Supply Chain Consultation</option>
-                        <option value="project_management">Project Management</option>
-                        <option value="logistics_optimization">Logistics Optimization</option>
-                    </select>
-                    <input type="submit" value="Book Slot">
-                </form>
-            </section>
+    <h2>Book a Slot</h2>
+    <form action="book-slot.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <select id="time" name="time" required>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="15:00">3:00 PM</option>
+        </select>
+        
+        <input type="submit" value="Book Now">
+    </form>
+</section>
 
             <section id="contact">
                 <h2>Contact Info</h2>
