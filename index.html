@@ -11,7 +11,7 @@
             font-family: 'Calibri', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9fafb;
+            background-color: #f4f4f9;
             color: #333;
         }
 
@@ -20,26 +20,30 @@
         }
 
         header {
-            background-color: #1a3d7c;
+            background: linear-gradient(135deg, rgba(26, 61, 124, 0.85), rgba(255, 255, 255, 0.5)), url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70') no-repeat center center/cover;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            background-image: url('https://images.unsplash.com/photo-1537432376769-00a6b9402a70');
-            background-size: cover;
-            background-position: center;
+            padding: 40px 0;
             animation: fadeIn 2s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .container {
             display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .left-section {
             width: 30%;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            margin-right: 20px;
+            position: sticky;
+            top: 20px;
         }
 
         .right-section {
@@ -50,35 +54,35 @@
         section {
             margin: 20px 0;
             background-color: white;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2.5em; /* Increased font size for the name */
-            margin: 0; /* Remove margin */
+            padding: 30px;
+            background: linear-gradient(135deg, #ffffff, #f4f4f9);
         }
 
         .name {
-            font-size: 2.2em; /* Font size for the name */
+            font-size: 2.4em;
             font-weight: bold;
-            margin-bottom: 10px; /* Space below the name */
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1a3d7c;
         }
 
         section h2 {
             color: #1a3d7c;
-            font-size: 1.8em; /* Increased font size for section headers */
+            font-size: 2em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             border-bottom: 3px solid #003366;
             padding-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         }
 
         section p, section ul li {
-            font-size: 1.1em;
-            line-height: 1.2; /* Reduced spacing */
-            margin-bottom: 5px; /* Reduced margin */
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #333;
         }
 
         footer {
@@ -86,6 +90,7 @@
             padding: 20px;
             background-color: #003366;
             color: white;
+            margin-top: 30px;
         }
 
         .social-icons a {
@@ -96,10 +101,11 @@
         }
 
         .slot-booking-section {
-            background-color: #fff0e6;
-            padding: 20px;
+            background-color: #fff7e6;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
         }
 
         .slot-booking-section h2 {
@@ -113,10 +119,11 @@
 
         .slot-booking-section input,
         .slot-booking-section select {
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .slot-booking-section input[type="submit"] {
@@ -135,69 +142,85 @@
             to { opacity: 1; }
         }
 
-        /* Icons for sections */
+        /* Section icons */
         .section-icon {
             margin-right: 10px;
             color: #1a3d7c;
             font-size: 1.5em;
         }
 
-        /* Skill icon styles */
-        .skill-icon {
-            margin-right: 5px;
-            color: #1a3d7c;
-            font-size: 1.2em;
-        }
-
+        /* Skills section */
         .skills-list {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            margin-top: 10px;
+            margin-top: 15px;
+            justify-content: center;
         }
 
         .skills-list div {
             display: flex;
             align-items: center;
-            margin: 5px; /* Small margin between skill icons */
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
 
-        /* Questions section */
-        .questions-section {
-            margin: 20px 0;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .questions-section h2 {
+        .skill-icon {
+            margin-right: 10px;
             color: #1a3d7c;
+            font-size: 1.2em;
+        }
+
+        /* Testimonials section */
+        blockquote {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #1a3d7c;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-size: 1em;
+            color: #555;
         }
 
         /* Navigation styles */
         nav {
             display: flex;
-            flex-wrap: wrap; /* Allows the navigation items to wrap to next line */
-            margin-bottom: 20px;
-            justify-content: space-between; /* Align items evenly */
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+            background-color: #f4f4f9;
+            padding: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         nav a {
-            font-size: 1.3em; /* Increased font size for quick access names */
+            font-size: 1.3em;
             color: #1a3d7c;
             text-decoration: none;
-            margin: 5px; /* Small margin for spacing */
-            padding: 5px;
+            margin: 5px 15px;
+            padding: 10px 15px;
             border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         nav a:hover {
-            background-color: #e0e0e0;
+            background-color: #d1e0ff;
         }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>Hemanth Gowda A R - Supply Chain Planning & Design Portfolio</h1>
+    </header>
 
     <div class="container">
         <div class="left-section">
@@ -222,31 +245,8 @@
             <section id="experience">
                 <h2>Professional Experience</h2>
                 <ul>
-                    <li>
-                        <strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)
-                        <ul>
-                            <li>Understand diverse client businesses across industries and develop tailored digital solutions to optimize their supply chains.</li>
-                            <li>Specialize in digitizing and optimizing last-mile delivery, enhancing visibility throughout the supply chain tiers.</li>
-                            <li>Engage with clients spanning B2B, B2C, 3PL, Quick Commerce, CEP, CPG, Retail, and Service sectors in the Middle East and Africa.</li>
-                            <li>Manage the entire customer success cycle, from initial proposals and quotes (RFI, RFP, RFQ) to solution design and product implementation.</li>
-                            <li>Designed solutions for clients like Careem, Al Ahram, GAC Dubai (Gulf Agency Company), STC by Channels.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Genpact</strong> - Supply Chain Network Design and Optimization (March 2023 - July 2023)
-                        <ul>
-                            <li>Built comprehensive supply chain models for Kraft Heinz - US, focusing on optimizing network efficiency and last-mile delivery strategies.</li>
-                            <li>Enhanced operational effectiveness through innovative data-driven recommendations for diverse clients.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Walmart</strong> - Supply Chain Analyst (June 2019 - February 2023)
-                        <ul>
-                            <li>Led the development and optimization of the supply chain network to support the company's growth and market demands.</li>
-                            <li>Utilized data analytics to forecast demand and streamline inventory management, ensuring timely deliveries and minimal wastage.</li>
-                            <li>Collaborated with cross-functional teams to implement process improvements, increasing operational efficiency.</li>
-                        </ul>
-                    </li>
+                    <li><strong>Locus</strong> - Manager-Pre Sales | Solutions Design (August 2023 - Present)</li>
+                    <li><strong>Genpact</strong> - Assistant Manager | Industrial Engineer (July 2019 - July 2023)</li>
                 </ul>
             </section>
 
@@ -256,74 +256,50 @@
                     <div><i class="fas fa-truck skill-icon"></i> Supply Chain Management</div>
                     <div><i class="fas fa-chart-line skill-icon"></i> Data Analytics</div>
                     <div><i class="fas fa-cogs skill-icon"></i> Optimization Techniques</div>
-                    <div><i class="fas fa-lightbulb skill-icon"></i> Problem Solving</div>
-                    <div><i class="fas fa-balance-scale skill-icon"></i> Logistics Optimization</div>
-                    <div><i class="fas fa-clipboard-check skill-icon"></i> Project Management</div>
-                    <div><i class="fas fa-user-check skill-icon"></i> Client Engagement</div>
+                    <div><i class="fas fa-brain skill-icon"></i> Problem Solving</div>
+                    <div><i class="fas fa-boxes skill-icon"></i> Logistics Optimization</div>
+                    <div><i class="fas fa-project-diagram skill-icon"></i> Project Management</div>
+                    <div><i class="fas fa-users skill-icon"></i> Client Engagement</div>
                 </div>
             </section>
 
             <section id="testimonials">
                 <h2>Testimonials</h2>
                 <blockquote>
-                    <p>"Hemanth's insights into our supply chain processes were invaluable. His strategic approach led to significant efficiency improvements."</p>
-                    <footer>- Client Name, Position</footer>
-                </blockquote>
-                <blockquote>
-                    <p>"His ability to analyze complex logistics challenges and provide actionable solutions is remarkable."</p>
-                    <footer>- Client Name, Position</footer>
+                    "Hemanth's expertise in supply chain management and optimization is exceptional. He understands complex problems and delivers effective solutions with a focus on innovation and efficiency."
+                    <footer>- Former Manager, Genpact</footer>
                 </blockquote>
             </section>
 
             <section id="booking" class="slot-booking-section">
                 <h2>Book a Slot</h2>
-                <form action="#">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-                    
-                    <label for="time">Preferred Time:</label>
-                    <select id="time" name="time" required>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="14:00">2:00 PM</option>
-                        <option value="15:00">3:00 PM</option>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <select name="slot" required>
+                        <option value="">Select a Time Slot</option>
+                        <option value="slot1">Monday 10:00 AM - 11:00 AM</option>
+                        <option value="slot2">Wednesday 2:00 PM - 3:00 PM</option>
+                        <option value="slot3">Friday 4:00 PM - 5:00 PM</option>
                     </select>
-                    
                     <input type="submit" value="Book Now">
                 </form>
             </section>
 
             <section id="contact">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:hemanth.gowda@example.com">hemanth.gowda@example.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/hemanthgowda" target="_blank">linkedin.com/in/hemanthgowda</a></p>
-            </section>
-
-            <section id="questions" class="questions-section">
-                <h2>Send Questions</h2>
-                <form action="#">
-                    <label for="question-email">Email:</label>
-                    <input type="email" id="question-email" name="question-email" required>
-                    
-                    <label for="question">Your Question:</label>
-                    <textarea id="question" name="question" rows="4" required></textarea>
-                    
-                    <input type="submit" value="Send Question">
-                </form>
+                <h2>Contact Info</h2>
+                <p><strong>Email:</strong> hemanth.gowda@example.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/hemanthgowda">linkedin.com/in/hemanthgowda</a></p>
             </section>
         </div>
     </div>
 
     <footer>
-        <p>© 2024 Hemanth Gowda. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hemanthgowda"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:hemanth.gowda@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Hemanth Gowda A R. All Rights Reserved.</p>
     </footer>
 
 </body>
